@@ -14,7 +14,7 @@ from datetime import datetime
 from streamlit_lottie import st_lottie
 from yfinance import shared
 
-
+ 
 start = '2010-01-01'
 end = datetime.now()
 
@@ -94,7 +94,22 @@ st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 # st.set_page_config(layout="wide")
 st.title(':chart_with_upwards_trend: Predictbay')
 st.subheader('Welcome to our _Stocks Prediction_ WebApp')
-st.markdown("<a href='https://github.com/deepraj21/Realtime-Stock-Predictor'><img src='https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white' alt='GitHub'></a>", unsafe_allow_html=True)
+column1,column2=st.columns(2)
+with column1:
+    
+    st.markdown("<a href='https://github.com/deepraj21/Realtime-Stock-Predictor'><img src='https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white' alt='GitHub'></a>", unsafe_allow_html=True)
+with column2:
+    st.markdown(
+    """
+    <div style="text-align: right">
+        <a href="https://www.predictbay.live/">
+            <img src="https://img.shields.io/badge/Version-2-brightgreen?style=for-the-badge">
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+    )
+    
 st.markdown("<hr>", unsafe_allow_html=True)
 left_col, right_col = st.columns(2)
 with left_col:
@@ -275,7 +290,7 @@ with col2:
         st.markdown("<p style= font-size:16px;>Abhishek Mallick</p><p style= font-size:10px;>ML | Full stack</p><a href='https://github.com/Abhishek-Mallick'><img src='https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white' alt='GitHub'></a>", unsafe_allow_html=True)
         st.markdown("<br>", unsafe_allow_html=True)
     with cols2:
-        st.markdown("<p style= font-size:16px;>Mayukh Mondal</p><p style= font-size:10px;>Python | DevOps</p><a href='https://github.com/Mayukh026'><img src='https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white' alt='GitHub'></a>", unsafe_allow_html=True)
+        st.markdown("<p style= font-size:16px;>Mayukh Mondal</p><p style= font-size:10px;>Python | DevOps</p><a href='https://github.com/Mayukh-Mondal-Dev'><img src='https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white' alt='GitHub'></a>", unsafe_allow_html=True)
         st.markdown("<br>", unsafe_allow_html=True)
         st.markdown("<p style= font-size:16px;>Harshit Mania</p><p style= font-size:10px;>React Developer</p><a href='https://github.com/Harshitm14'><img src='https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white' alt='GitHub'></a>", unsafe_allow_html=True)
       
